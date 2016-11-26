@@ -1,0 +1,355 @@
+Started GET "/" for ::1 at 2016-11-26 09:52:44 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.2ms)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from require at /Users/alex.young/Desktop/workspace/rails/tutorial_app/bin/rails:9)
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160718045931)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateUsers < ActiveRecord::Migration[4.2] (called from require at /Users/alex.young/Desktop/workspace/rails/tutorial_app/bin/rails:9)
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160718045931"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddIndexToUsersEmail (20160801041431)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddIndexToUsersEmail < ActiveRecord::Migration[4.2] (called from require at /Users/alex.young/Desktop/workspace/rails/tutorial_app/bin/rails:9)
+  [1m[35m (0.3ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160801041431"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20160802040034)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddPasswordDigestToUsers < ActiveRecord::Migration[4.2] (called from require at /Users/alex.young/Desktop/workspace/rails/tutorial_app/bin/rails:9)
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160802040034"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-11-26 17:52:57 UTC], ["updated_at", 2016-11-26 17:52:57 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for ::1 at 2016-11-26 09:53:04 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (395.9ms)
+Completed 500 Internal Server Error in 409ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/images
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/stylesheets
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     8: 	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___4400951879662999580_70117595525160'
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.6ms)
+Started GET "/" for ::1 at 2016-11-26 09:56:04 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (730.3ms)
+Completed 500 Internal Server Error in 743ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/images
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/stylesheets
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets):
+     8: 	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___715160573564362400_70131138124080'
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.4ms)
+Started GET "/" for ::1 at 2016-11-26 12:55:51 -0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/images
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/stylesheets
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets):
+     8: 	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___715160573564362400_70131140721020'
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.3ms)
+Started GET "/" for ::1 at 2016-11-26 12:57:47 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (183.6ms)
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/images
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/stylesheets
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets):
+     8: 	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___2858732896430907015_70271660859580'
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.9ms)
+Started GET "/" for ::1 at 2016-11-26 12:58:06 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1827.3ms)
+Completed 500 Internal Server Error in 1841ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Undefined variable: "$gray-darker".):
+     8: 	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+  
+app/assets/stylesheets/custom.css.scss:89
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___1643285346593387971_70317831880780'
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.0ms)
+Started GET "/" for ::1 at 2016-11-26 12:58:24 -0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/images
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/app/assets/stylesheets
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/javascripts
+  /Users/alex.young/Desktop/workspace/rails/tutorial_app/vendor/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.1/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actioncable-5.0.0.1/lib/assets/compiled
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/javascripts
+  /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/bootstrap-4.0.0.alpha5/assets/stylesheets):
+     8: 	<%= link_to "Sign Up Now", signup_path, class: "btn btn-lg btn-primary" %>
+     9: </div>
+    10: 
+    11: <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/static_pages/home.html.erb:11:in `_app_views_static_pages_home_html_erb___1643285346593387971_70317908742480'
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.5ms)
+Started GET "/" for ::1 at 2016-11-26 13:01:38 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/alex.young/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2260.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2348ms (Views: 2339.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-7cdb5e2c35966f37120f4735f0897bbc17379a2905a3c753efc3500698280ea9.css?body=1" for ::1 at 2016-11-26 13:01:40 -0800
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-11-26 13:01:40 -0800
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-11-26 13:01:40 -0800
+Started GET "/assets/rails-c094bc3a4bf50e5bb477109e5cb0d213af27ad75b481c4df249f50974dbeefe6.png" for ::1 at 2016-11-26 13:01:40 -0800
+Started GET "/signup" for ::1 at 2016-11-26 13:07:43 -0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2016-11-26 13:07:45 -0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-26 13:07:47 -0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
